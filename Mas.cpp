@@ -1,14 +1,17 @@
 #include "Mas.h"
 
 
-Mas::Mas(int n)
+Mas::Mas(int n, int key)
 {
 	this->n = n;
 	this->a = new int[n];
-	cout << "¬ведите массив : ";
-	for (int i = 0; i < n; i++)
+	if (key == 1)
 	{
-		cin >> this->a[i];
+		cout << "¬ведите массив : ";
+		for (int i = 0; i < n; i++)
+		{
+			cin >> this->a[i];
+		}
 	}
 }
 
