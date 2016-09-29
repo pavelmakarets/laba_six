@@ -6,10 +6,9 @@ Mas::Mas(int n)
 	this->n = n;
 	this->a = new int[n];
 	cout << "¬ведите массив : ";
-	while (n > 0)
+	for (int i = 0; i < n; i++)
 	{
-		cin >> a[n];
-		n--;
+		cin >> this->a[i];
 	}
 }
 
