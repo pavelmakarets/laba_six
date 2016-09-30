@@ -1,5 +1,7 @@
 #include "Mas.h"
-
+#include "Integer.h"
+//#define NDEBUG 
+#include <cassert>
 
 int size(int);
 
@@ -59,11 +61,30 @@ void main()
 	//if (a <= b) cout << "Массив a меньше либо равен b." << endl;
 
 
-	int mas1[] = {5, 4, 3, 1, 5};
+	/*int mas1[] = {5, 4, 3, 1, 5};
 	double mas2[] = { 1.1, 2.2, 3.3, 4.6, 5.1 };
 
 	cout << min(mas1,5,4) << endl;
-	cout << min(mas2, 5, 1.2) << endl;
+	cout << min(mas2, 5, 1.2) << endl;*/
+
+	/*Integer a(1);
+	Integer b(2);
+	Integer c(0);
+
+	try
+	{
+	b / a;
+	a / c;
+	}
+	catch (ArithmeticException x)
+	{
+		x.get_code();
+	}
+	catch (exception x){}*/
+
+	int value = 0;
+
+	assert(value!= 0);
 
 	system("pause");
 }
